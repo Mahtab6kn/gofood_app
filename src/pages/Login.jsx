@@ -28,6 +28,11 @@ const Login = () => {
            })
            navigate('/')
           }
+          else{
+            toast.error('Invalid Credentials',{
+              bodyClassName:"toastError"
+             })
+          }
        }
        catch(e){
           toast.error('Invalid Credentials',{
