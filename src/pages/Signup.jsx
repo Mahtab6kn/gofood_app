@@ -12,7 +12,7 @@ const Signup = () => {
     const navigate = useNavigate();
 
     const handleClick = async ()=>{
-        let response = await fetch('http://localhost:5000/signup',{
+        let response = await fetch('https://gofood-api-fcp0.onrender.com/signup',{
             method:'POST',
             body:JSON.stringify({name, email, address, password}),
             headers:{

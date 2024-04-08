@@ -9,7 +9,7 @@ const Login = () => {
 
   const handleClick =async ()=>{
      
-       let data = await fetch('http://localhost:5000/login',{
+       let data = await fetch('https://gofood-api-fcp0.onrender.com/login',{
           method:'post',
           body:JSON.stringify({email, password}),
           headers:{

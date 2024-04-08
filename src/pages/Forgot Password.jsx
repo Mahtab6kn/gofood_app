@@ -5,7 +5,7 @@ const Forgotpassword = () => {
     const [email, setEmail] = useState('');
     const navigate = useNavigate();
     const handleClick = async ()=>{
-        let data = await fetch('http://localhost:5000/forgot-password',{
+        let data = await fetch('https://gofood-api-fcp0.onrender.com/forgot-password',{
           method:'POST',
           body:JSON.stringify({email}),
           headers:{

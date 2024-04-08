@@ -5,7 +5,7 @@ const MyOrder = () => {
 
     const fetchOrder = async () => {
         // console.log(localStorage.getItem("userEmail"))
-     let response =   await fetch('http://localhost:5000/myOrder', {
+     let response =   await fetch('https://gofood-api-fcp0.onrender.com/myOrder', {
             method: 'post',
             headers: {
                 'content-type': 'application/json'

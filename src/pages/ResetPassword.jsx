@@ -7,7 +7,7 @@ const ResetPassword = () => {
     const navigate = useNavigate();
     const {token} = useParams();
     const handleClick = async ()=>{
-        let data = await fetch('http://localhost:5000/reset-password/'+token,{
+        let data = await fetch('https://gofood-api-fcp0.onrender.com/reset-password/'+token,{
           method:'POST',
           body:JSON.stringify({password}),
           headers:{

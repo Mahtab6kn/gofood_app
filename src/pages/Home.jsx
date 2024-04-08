@@ -9,7 +9,7 @@ const Home = () => {
   const [foodItem, setFoodItem] = useState([]);
 
   const loadData = async () => {
-    let response = await fetch("http://localhost:5000/dataList", {
+    let response = await fetch("https://gofood-api-fcp0.onrender.com/dataList", {
       method: "GET",
       headers: {
         'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ const Home = () => {
     setFoodItem(response)
   }
   const loadCategory = async () => {
-    let category = await fetch("http://localhost:5000/foodCategory", {
+    let category = await fetch("https://gofood-api-fcp0.onrender.com/foodCategory", {
       method: "GET",
       headers: {
         'Content-Type': 'application/json'
